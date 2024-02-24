@@ -1,0 +1,342 @@
+Cyclistic_bikes_01
+
+Row Labels	Average of ride_length								
+	casual	0:14:17								
+	member	0:10:04								
+	(blank)									
+	Grand Total	0:10:57								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:18:49	0:14:00	0:12:46	0:13:26	0:11:48	0:11:54	0:16:46		0:14:17
+	member	0:11:19	0:09:48	0:09:57	0:09:56	0:09:31	0:10:00	0:10:34		0:10:04
+	(blank)									
+	Grand Total	0:13:27	0:10:39	0:10:29	0:10:37	0:09:56	0:10:23	0:12:08		0:10:57
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	6377	5698	6904	5978	5022	5012	5017		40008
+	member	15989	22649	29377	24743	22645	20109	14781		150293
+	(blank)									
+	Grand Total	22366	28347	36281	30721	27667	25121	19798		190301
+										
+	Row Labels	Average of day_of_week								
+	casual	3.816686663								
+	member	3.897293952								
+	(blank)									
+	Grand Total	3.88034745							
+
+Cyclistic_bikes_02
+	Row Labels	Average of ride_length								
+	casual	0:16:38								
+	member	0:10:28								
+	(blank)									
+	Grand Total	0:11:52								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:21:43	0:15:14	0:13:46	0:11:37	0:13:29	0:14:46	0:19:42		0:16:38
+	member	0:12:21	0:10:06	0:09:54	0:09:39	0:09:46	0:10:03	0:11:52		0:10:28
+	(blank)									
+	Grand Total	0:15:26	0:11:13	0:10:39	0:10:00	0:10:24	0:10:59	0:14:06		0:11:52
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	9955	6788	6853	4577	3712	4250	6881		43016
+	member	20337	24391	28631	21215	18140	17311	17403		147428
+	(blank)									
+	Grand Total	30292	31179	35484	25792	21852	21561	24284		190444
+										
+	Row Labels	Average of day_of_week								
+	casual	3.59459271								
+	member	3.773089237								
+	(blank)									
+	Grand Total	3.732771838								
+
+
+Cyclistic_bikes_03
+	Row Labels	Average of ride_length								
+	casual	0:16:01								
+	member	0:10:12								
+	(blank)									
+	Grand Total	0:11:36								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:19:35	0:15:29	0:16:10	0:14:55	0:14:06	0:15:36	0:17:29		0:16:01
+	member	0:10:50	0:09:48	0:10:18	0:10:18	0:09:46	0:09:56	0:11:08		0:10:12
+	(blank)									
+	Grand Total	0:13:28	0:11:00	0:11:37	0:11:19	0:10:43	0:11:19	0:13:10		0:11:36
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	7386	6818	9219	11305	10125	9362	7986		62201
+	member	17189	25390	32128	39751	35902	29155	16962		196477
+	(blank)									
+	Grand Total	24575	32208	41347	51056	46027	38517	24948		258678
+										
+	Row Labels	Average of day_of_week								
+	casual	4.125303452								
+	member	4.054067397								
+	(blank)									
+	Grand Total	4.071196623								
+
+
+Cyclistic_bikes_04
+	Row Labels	Average of ride_length								
+	casual	0:21:20								
+	member	0:11:28								
+	(blank)									
+	Grand Total	0:14:52								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:24:52	0:18:57	0:18:57	0:19:15	0:19:18	0:20:43	0:24:26		0:21:20
+	member	0:12:06	0:10:08	0:11:16	0:11:10	0:11:27	0:11:20	0:12:49		0:11:28
+	(blank)									
+	Grand Total	0:17:03	0:12:27	0:13:25	0:13:35	0:14:01	0:14:50	0:18:01		0:14:52
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	18766	12119	15826	18370	23506	25922	32775		147284
+	member	29548	33924	40491	43075	48317	43582	40365		279302
+	(blank)									
+	Grand Total	48314	46043	56317	61445	71823	69504	73140		426586
+										
+	Row Labels	Average of day_of_week								
+	casual	4.524924635								
+	member	4.213364029								
+	(blank)									
+	Grand Total	4.320934114								
+
+
+Cyclistic_bikes_05
+
+	Row Labels	Average of ride_length								
+	casual	0:22:39								
+	member	0:12:35								
+	(blank)									
+	Grand Total	0:16:29								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:26:56	0:23:52	0:20:12	0:18:47	0:19:49	0:20:53	0:25:33		0:22:39
+	member	0:14:31	0:12:05	0:12:16	0:11:57	0:12:08	0:12:08	0:13:48		0:12:35
+	(blank)									
+	Grand Total	0:20:47	0:16:32	0:14:53	0:14:07	0:14:43	0:15:29	0:19:30		0:16:29
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:26:56	0:23:52	0:20:12	0:18:47	0:19:49	0:20:53	0:25:33		0:22:39
+	member	0:14:31	0:12:05	0:12:16	0:11:57	0:12:08	0:12:08	0:13:48		0:12:35
+	(blank)									
+	Grand Total	0:20:47	0:16:32	0:14:53	0:14:07	0:14:43	0:15:29	0:19:30		0:16:29
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	42124	29541	33382	31393	28271	28712	40758		234181
+	member	41243	48896	67680	67517	55686	46302	43322		370646
+	(blank)									
+	Grand Total	83367	78437	101062	98910	83957	75014	84080		604827
+										
+	Row Labels	Average of day_of_week								
+	casual	3.953595723								
+	member	3.970470476								
+	(blank)									
+	Grand Total	3.963936795								
+
+Cyclistic_bikes_06
+	Row Labels	Average of ride_length								
+	casual	0:22:19								
+	member	0:12:52								
+	(blank)									
+	Grand Total	0:16:49								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:24:49	0:21:51	0:18:30	0:19:20	0:19:42	0:22:21	0:25:29		0:22:19
+	member	0:14:09	0:12:20	0:11:39	0:12:10	0:12:13	0:12:53	0:14:53		0:12:52
+	(blank)									
+	Grand Total	0:19:26	0:15:56	0:13:53	0:14:43	0:14:57	0:16:57	0:20:30		0:16:49
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	41624	32269	24955	33748	42917	56422	69295		301230
+	member	42451	53016	51485	61089	74274	74736	61337		418388
+	(blank)									
+	Grand Total	84075	85285	76440	94837	117191	131158	130632		719618
+										
+	Row Labels	Average of day_of_week								
+	casual	4.49557149								
+	member	4.293715403								
+	(blank)									
+	Grand Total	4.378211773								
+
+
+Cyclistic_bikes_07
+	Row Labels	Average of ride_length								
+	casual	0:23:35								
+	member	0:13:13								
+	(blank)									
+	Grand Total	0:17:41								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:26:23	0:23:32	0:23:30	0:19:40	0:20:52	0:22:17	0:25:10		0:23:35
+	member	0:14:41	0:12:50	0:13:13	0:12:05	0:12:32	0:12:52	0:14:16		0:13:13
+	(blank)									
+	Grand Total	0:20:38	0:17:06	0:17:23	0:14:40	0:15:38	0:16:54	0:19:54		0:17:41
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	59458	48834	41235	27997	38759	44520	70541		331344
+	member	57363	73694	60459	53885	65361	59503	66011		436276
+	(blank)									
+	Grand Total	116821	122528	101694	81882	104120	104023	136552		767620
+										
+	Row Labels	Average of day_of_week								
+	casual	4.066833865								
+	member	4.005647801								
+	(blank)									
+	Grand Total	4.032058831								
+
+
+Cyclistic_bikes_08
+	Row Labels	Average of ride_length								
+	casual	0:22:40								
+	member	0:13:11								
+	(blank)									
+	Grand Total	0:17:00								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:26:20	0:21:21	0:20:37	0:20:00	0:20:10	0:22:58	0:25:43		0:22:40
+	member	0:14:43	0:12:14	0:12:42	0:12:40	0:12:31	0:13:37	0:14:39		0:13:11
+	(blank)									
+	Grand Total	0:20:23	0:15:21	0:15:22	0:15:17	0:15:19	0:17:42	0:20:18		0:17:00
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	46362	26554	42121	45809	44856	49421	56007		311130
+	member	48608	51302	82787	82641	77481	63878	53866		460563
+	(blank)									
+	Grand Total	94970	77856	124908	128450	122337	113299	109873		771693
+										
+	Row Labels	Average of day_of_week								
+	casual	4.248783467								
+	member	4.077340125								
+	(blank)									
+	Grand Total	4.146462389								
+
+
+Cyclistic_bikes_09
+	Row Labels	Average of ride_length								
+	casual	0:21:15								
+	member	0:12:38								
+	(blank)									
+	Grand Total	0:16:01								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:24:43	0:21:48	0:16:54	0:16:57	0:17:32	0:20:19	0:24:03		0:21:15
+	member	0:14:10	0:12:04	0:11:41	0:11:56	0:11:51	0:12:41	0:13:59		0:12:38
+	(blank)									
+	Grand Total	0:19:23	0:15:43	0:13:16	0:13:27	0:13:37	0:15:40	0:18:58		0:16:01
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	44386	26114	22868	26178	28172	45482	68403		261603
+	member	45302	43543	53065	60812	61968	70638	69390		404718
+	(blank)									
+	Grand Total	89688	69657	75933	86990	90140	116120	137793		666321
+										
+	Row Labels	Average of day_of_week								
+	casual	4.443767847								
+	member	4.33444769								
+	(blank)									
+	Grand Total	4.377367665								
+
+
+Cyclistic_bikes_10
+	Row Labels	Average of ride_length								
+	casual	0:19:04								
+	member	0:11:34								
+	(blank)									
+	Grand Total	0:14:03								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:23:42	0:18:20	0:17:26	0:17:26	0:15:34	0:17:13	0:20:17		0:19:04
+	member	0:12:56	0:10:54	0:11:29	0:11:32	0:11:12	0:11:14	0:12:03		0:11:34
+	(blank)									
+	Grand Total	0:17:45	0:13:02	0:13:10	0:13:15	0:12:26	0:13:09	0:15:27		0:14:03
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	38075	24003	26836	23048	19612	20482	24999		177055
+	member	46945	59177	68541	56042	50275	43334	35708		360022
+	(blank)									
+	Grand Total	85020	83180	95377	79090	69887	63816	60707		537077
+										
+	Row Labels	Average of day_of_week								
+	casual	3.697867894								
+	member	3.767616979								
+	(blank)									
+	Grand Total	3.74462321								
+
+
+Cyclistic_bikes_11
+	Row Labels	Average of ride_length								
+	casual	0:16:10								
+	member	0:11:01								
+	(blank)									
+	Grand Total	0:12:25								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:19:07	0:14:38	0:12:59	0:13:50	0:15:07	0:15:21	0:20:05		0:16:10
+	member	0:12:16	0:10:35	0:10:19	0:10:39	0:10:50	0:10:35	0:12:47		0:11:01
+	(blank)									
+	Grand Total	0:14:40	0:11:31	0:10:53	0:11:22	0:11:57	0:11:54	0:15:32		0:12:25
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	13714	11038	10700	13778	18010	12819	18333		98392
+	member	25509	36988	38639	47895	50993	33720	30382		264126
+	(blank)									
+	Grand Total	39223	48026	49339	61673	69003	46539	48715		362518
+										
+	Row Labels	Average of day_of_week								
+	casual	4.251331409								
+	member	4.077375949								
+	(blank)									
+	Grand Total	4.124589676								
+
+
+Cyclistic_bikes_12
+	Row Labels	Average of ride_length								
+	casual	0:14:49								
+	member	0:10:47								
+	(blank)									
+	Grand Total	0:11:43								
+										
+	Average of ride_length	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	0:17:22	0:13:28	0:12:40	0:14:05	0:13:55	0:14:28	0:16:15		0:14:49
+	member	0:11:19	0:10:36	0:10:10	0:10:21	0:11:00	0:10:58	0:11:12		0:10:47
+	(blank)									
+	Grand Total	0:13:04	0:11:08	0:10:37	0:11:06	0:11:37	0:11:50	0:12:41		0:11:43
+										
+	Count of ride_id	Column Labels								
+	Row Labels	1	2	3	4	5	6	7	(blank)	Grand Total
+	casual	7476	5045	5319	6979	7638	9511	9702		51670
+	member	18369	21596	23464	27779	28539	29322	23324		172393
+	(blank)									
+	Grand Total	25845	26641	28783	34758	36177	38833	33026		224063
+										
+	Row Labels	Average of day_of_week								
+	casual	4.346990517								
+	member	4.205298359								
+	(blank)									
+	Grand Total	4.237973249								
+
