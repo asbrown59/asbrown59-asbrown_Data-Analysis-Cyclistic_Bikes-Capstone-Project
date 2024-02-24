@@ -1,0 +1,388 @@
+SELECT *
+FROM `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_01` AS d1
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_02` AS d2 ON d1.Ride_id = d2.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_03` AS d3 ON d2.Ride_id = d3.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_04` AS d4 ON d3.Ride_id = d4.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_05` AS d5 ON d4.Ride_id = d5.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_06` AS d6 ON d5.Ride_id = d6.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_07` AS d7 ON d6.Ride_id = d7.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_08` AS d8 ON d7.Ride_id = d8.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_09` AS d9 ON d8.Ride_id = d9.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_10` AS d10 ON d9.Ride_id = d10.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_11` AS d11 ON d10.Ride_id = d11.Ride_id
+JOIN `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_12` AS d12 ON d11.Ride_id = d12.Ride_id;
+
+-used to join data-
+
+SELECT 
+    rideable_type,
+    member_casual,
+    COUNT(*) AS ride_count
+FROM 
+    `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_01`
+WHERE 
+    member_casual IN ('member', 'casual')
+GROUP BY 
+    rideable_type, 
+    member_casual;
+
+-RESULTS-
+
+rideable_type	member_casual	ride_count
+docked_bike	casual	1738
+classic_bike	casual	13909
+classic_bike	member	76385
+electric_bike	member	73908
+electric_bike	casual	24361
+
+SELECT 
+    rideable_type,
+    member_casual,
+    COUNT(*) AS ride_count
+FROM 
+    `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_02`
+WHERE 
+    member_casual IN ('member', 'casual')
+GROUP BY 
+    rideable_type, 
+    member_casual;
+
+rideable_type	member_casual	ride_count
+docked_bike	casual	2195
+classic_bike	casual	15534
+classic_bike	member	74354
+electric_bike	member	73074
+electric_bike	casual	25287
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_03`
+
+rideable_type	member_casual	ride_count
+electric_bike	casual	39725
+electric_bike	member	108850
+classic_bike	casual	19456
+classic_bike	member	87627
+docked_bike	casual	
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_04`
+rideable_type	member_casual	ride_count
+docked_bike	casual	8887
+classic_bike	casual	48899
+classic_bike	member	120838
+electric_bike	member	158464
+electric_bike	casual	89498
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_05`
+rideable_type	member_casual	ride_count
+electric_bike	member	193349
+electric_bike	casual	128491
+classic_bike	member	177297
+classic_bike	casual	92598
+docked_bike	casual	13092
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_06`
+rideable_type	member_casual	ride_count
+docked_bike	casual	14974
+classic_bike	casual	116594
+classic_bike	member	196952
+electric_bike	member	221436
+electric_bike	casual	169662
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_07`
+rideable_type	member_casual	ride_count
+electric_bike	member	217028
+electric_bike	casual	170038
+classic_bike	member	219248
+classic_bike	casual	142882
+docked_bike	casual	18424
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_08`
+rideable_type	member_casual	ride_count
+docked_bike	casual	15957
+classic_bike	casual	148594
+electric_bike	member	212196
+electric_bike	casual	146579
+classic_bike	member	248367
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_09`
+rideable_type	member_casual	ride_count
+classic_bike	member	215135
+classic_bike	casual	132236
+electric_bike	member	189583
+electric_bike	casual	129367
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_10`
+rideable_type	member_casual	ride_count
+classic_bike	member	185196
+classic_bike	casual	83165
+electric_bike	casual	93890
+electric_bike	member	174826
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_11`
+rideable_type	member_casual	ride_count
+classic_bike	casual	42549
+classic_bike	member	133608
+electric_bike	member	130518
+electric_bike	casual	55843
+
+ `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_12`
+rideable_type	member_casual	ride_count
+electric_bike	member	88275
+electric_bike	casual	31206
+classic_bike	member	84118
+classic_bike	casual	20464
+
+SELECT 
+    ride_id,
+    TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS ride_duration_seconds
+FROM 
+    gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_01;
+
+-For checking the ride duration for each ride_ID-
+
+SELECT 
+    member_casual,
+    EXTRACT(DAYOFWEEK FROM started_at) AS day_of_week,
+    COUNT(*) AS ride_count
+FROM 
+    `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_01`
+GROUP BY 
+    member_casual, day_of_week
+ORDER BY 
+    member_casual, day_of_week;
+
+-RESULTS-
+member_casual	day_of_week	ride_count
+casual	1	6377
+casual	2	5698
+casual	3	6904
+casual	4	5978
+casual	5	5022
+casual	6	5012
+casual	7	5017
+member	1	15989
+member	2	22649
+member	3	29377
+member	4	24743
+member	5	22645
+member	6	20109
+member	7	14781
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_02`
+member_casual	day_of_week	ride_count
+casual	1	9955
+casual	2	6788
+casual	3	6853
+casual	4	4577
+casual	5	3712
+casual	6	4250
+casual	7	6881
+member	1	20337
+member	2	24391
+member	3	28631
+member	4	21215
+member	5	18140
+member	6	17311
+member	7	17403
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_03`
+member_casual	day_of_week	ride_count
+casual	1	7386
+casual	2	6818
+casual	3	9219
+casual	4	11305
+casual	5	10125
+casual	6	9362
+casual	7	7986
+member	1	17189
+member	2	25390
+member	3	32128
+member	4	39751
+member	5	35902
+member	6	29155
+member	7	16962
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_04`
+member_casual	day_of_week	ride_count
+casual	1	18766
+casual	2	12119
+casual	3	15826
+casual	4	18370
+casual	5	23506
+casual	6	25922
+casual	7	32775
+member	1	29548
+member	2	33924
+member	3	40491
+member	4	43075
+member	5	48317
+member	6	43582
+member	7	40365
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_05`
+member_casual	day_of_week	ride_count
+casual	1	42124
+casual	2	29541
+casual	3	33382
+casual	4	31393
+casual	5	28271
+casual	6	28712
+casual	7	40758
+member	1	41243
+member	2	48896
+member	3	67680
+member	4	67517
+member	5	55686
+member	6	46302
+member	7	43322
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_06`
+member_casual	day_of_week	ride_count
+casual	1	41624
+casual	2	32269
+casual	3	24955
+casual	4	33748
+casual	5	42917
+casual	6	56422
+casual	7	69295
+member	1	42451
+member	2	53016
+member	3	51485
+member	4	61089
+member	5	74274
+member	6	74736
+member	7	61337
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_07`
+member_casual	day_of_week	ride_count
+casual	1	59458
+casual	2	48834
+casual	3	41235
+casual	4	27997
+casual	5	38759
+casual	6	44520
+casual	7	70541
+member	1	57363
+member	2	73694
+member	3	60459
+member	4	53885
+member	5	65361
+member	6	59503
+member	7	66011
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_08`
+member_casual	day_of_week	ride_count
+casual	1	46362
+casual	2	26554
+casual	3	42121
+casual	4	45809
+casual	5	44856
+casual	6	49421
+casual	7	56007
+member	1	48608
+member	2	51302
+member	3	82787
+member	4	82641
+member	5	77481
+member	6	63878
+member	7	53866
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_09`
+member_casual	day_of_week	ride_count
+casual	1	44386
+casual	2	26114
+casual	3	22868
+casual	4	26178
+casual	5	28172
+casual	6	45482
+casual	7	68403
+member	1	45302
+member	2	43543
+member	3	53065
+member	4	60812
+member	5	61968
+member	6	70638
+member	7	69390
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_10`
+member_casual	day_of_week	ride_count
+casual	1	38075
+casual	2	24003
+casual	3	26836
+casual	4	23048
+casual	5	19612
+casual	6	20482
+casual	7	24999
+member	1	46945
+member	2	59177
+member	3	68541
+member	4	56042
+member	5	50275
+member	6	43334
+member	7	35708
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_11`
+member_casual	day_of_week	ride_count
+casual	1	13714
+casual	2	11038
+casual	3	10700
+casual	4	13778
+casual	5	18010
+casual	6	12819
+casual	7	18333
+member	1	25509
+member	2	36988
+member	3	38639
+member	4	47895
+member	5	50993
+member	6	33720
+member	7	30382
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_12`
+member_casual	day_of_week	ride_count
+casual	1	7476
+casual	2	5045
+casual	3	5319
+casual	4	6979
+casual	5	7638
+casual	6	9511
+casual	7	9702
+member	1	18369
+member	2	21596
+member	3	23464
+member	4	27779
+member	5	28539
+member	6	29322
+member	7	23324
+
+SELECT 
+    member_casual,
+    AVG(EXTRACT(SECOND FROM ride_length)) AS average_ride_length_seconds
+FROM 
+    `gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_01`
+GROUP BY 
+    member_casual;
+
+-Calculate avg ride length for casual riders and members-
+
+member_casual	average_ride_length_seconds
+casual	29.423990201959569
+member	29.165683032476846
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_02`
+member_casual	average_ride_length_seconds
+casual	29.252766412497582
+member	29.187847627316021
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_03`
+member_casual	average_ride_length_seconds
+casual	29.224883844311314
+member	29.082274261109379
+
+`gold-mode-405801.Cyclistic_bikes.Cyclistic_bikes_04`
+member_casual	average_ride_length_seconds
+casual	29.192573531408463
+member	29.193951350151565
+
+
+
+
